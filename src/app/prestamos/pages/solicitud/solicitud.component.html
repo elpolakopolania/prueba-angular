@@ -45,10 +45,10 @@
             </mat-form-field>
           </div>
         </div>
-        <app-monto></app-monto>
+        <app-monto (eventData)="valorSeleccionado($event)"></app-monto>
         <div class="row">
           <div class="col-12">
-            <button mat-raised-button color="primary" class="float-right">
+            <button mat-raised-button color="primary" class="float-right" (click)="solicitar()">
               Solicitar
             </button>
           </div>

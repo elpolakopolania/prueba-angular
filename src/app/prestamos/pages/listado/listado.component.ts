@@ -56,6 +56,10 @@ export class ListadoComponent implements OnInit {
 
   modalError() {
     this.dialog.open(ModalComponent, {
+      data: {
+        title: 'No se puede pagar el prestamo',
+        content: 'El valor del prestamo supera el capital base del banco.',
+      }
     });
   }
 
